@@ -1,69 +1,94 @@
 *{
-    box-sizing: border-box; 
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
-}
-img{
-    width: 100%;
-    
-}
-.imagenfondo{
-    background-image: url(../img/GOGI_Mesa\ de\ trabajo\ 1.png);
-    background-repeat:no-repeat;
+    padding: 0;
 }
 
+/*El header*/
 .header{
     background-color: black;
-    background-size: 10%;
+}
+
+.buscador{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+input{   
+    border-radius: 3px; /*Cambia el borde del buscador (mas cuadrado o mas circular)*/
+    padding: 5px;
+    width: 200px;
+}
+
+
+.menu{
+    background-color: black;
+    /*display: flex; /*Sin display flex, flexbox no funciona*/
+    /*flex-direction: row;*/
+    height: 80px; /*Todos estos le dicen al header que sea mas grande*/
 }
 .opciones{
-    width: 50%;
     margin: auto;
-    /*Le dije que opciones se vaya a la mitad (todo lo escrito en el header)*/
     text-align: center;
-    /*centre lo que estaba escrito (li a)*/  
+    /*Flexbox*/
+    display: flex; /*Para poner todo al lado*/
+    width: 79%; /*Cuanto quiero que se me separen las palabras*/ 
+    justify-content: space-around; /*Para que no quede pegado*/
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
 }
-.opciones li{
+ul{
     list-style-type: none;
-    /*Le saque los puntos*/
+    /*Le saco los puntos a la lista. Se lo digo al ul porque es el que crea la lista*/
 }
 .opciones li a{
     text-decoration: none;
-    /*Le saque el subrayado*/
-    color: white;
-    /*le di color a lo escrito. El comando se lo tengo que dar al padre para que me responda inmediatamente*/
+    color: whitesmoke;
 }
 .opciones li a:hover{
-    /*Modificar el a. Darle personalizado*/
-    text-decoration: underline;
+    color: violet; /*Despues darle el color del logo*/
 }
 
-.nombres{
+
+
+/*Fondo*/
+.imagenfondo{
+    background-image: url(../img/GOGI_Mesa\ de\ trabajo\ 1.png);
+    height: 950px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Footer*/
+.footer{
     background-color: black;
-    margin: auto;
+    display: flex; /*Sin display flex, flexbox no funciona*/
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px; 
+
+}
+.nombres{
     text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
 }
 .nombres h5{
-    color: white;
+    color: whitesmoke;
 }
 
-/*Flexbox*/
-.header{
-    display: flex;
-    /*Para que todo flexbox funcione*/
-}
 
-/*Por ahora tengo todo perfecto para un celular*/
-
-/*Ahora quiero colocar media queries para hacer la pagina para una tablet (768px)*/
 @media(min-width: 768px){
-     .header{
-         display: flex;
-     }
-     .opciones{
-         display: flex;
-         /*Para que se pongan uno al lado del otro hago display flex*/
-         justify-content: space-around;
-         /*Para que se separen*/
-     }
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+}
+
+
+@media(min-width: 1024px){
+    .producto{
+        width: 100%;
+    }
 }
