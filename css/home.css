@@ -6,7 +6,8 @@
 
 /*Header*/
 .header{
-    background-color: black;
+    background-color: white;
+    width: 100%;
 }
 
 .buscador{
@@ -21,21 +22,22 @@ input{
 }
 
 .menu{
-    background-color: black;
     /*display: flex; /*Sin display flex, flexbox no funciona*/
     /*flex-direction: row;*/
-    height: 80px; /*Todos estos le dicen al header que sea mas grande*/
+    height: 100px; /*Todos estos le dicen al header que sea mas grande*/
+    width: 100%;
 }
 .opciones{
     margin: auto;
     text-align: center;
+    padding: 5px;
+    width: 325px; /*Le doy ancho mi caja*/
+    height: 100px;
     /*Flexbox*/
-    display: flex; /*Para poner todo al lado*/
-    width: 79%; /*Cuanto quiero que se me separen las palabras*/ 
+    display: flex; /*Para poner todo al lado*/ 
     justify-content: space-around; /*Para que no quede pegado*/
     align-items: center;
     flex-wrap: wrap;
-    height: 100%;
 }
 ul{
     list-style-type: none;
@@ -43,15 +45,20 @@ ul{
 }
 .opciones li a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #68698c;
+    font-family: roboto;
+    font-size: 16px;
 }
 .opciones li a:hover{
-    color: violet; /*Despues darle el color del logo*/
+    color: black; /*Despues darle el color del logo*/
 }
 
 /*Body*/
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: #68698c;
+}
+ul{
+    list-style-type: none;
 }
 
 .topcharts{
@@ -62,55 +69,84 @@ body{
     text-align: center;
 }
 .canciones{
-    background-color: violet;
     width: 330px;
     height: 233px;
     margin: 10px;
+    padding: 10px;
+    border-color: white;
+    border-style: solid;
+    
+    
+    
+}
+.canciones li{
+    display: flex;
+    flex-direction: column; /*Pongo la lista como columna*/
+    justify-content: center; /*Quedo en el centro de la caja*/
+    align-items: center;
+    height: 25px;
 }
 .canciones li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: robotolight;
+    
 }
 .canciones li a:hover{
-    color: violet;
+    color: black;
 }
 
 .albumes{
-    background-color: violet;
     width: 330px;
     height: 233px;
     margin: 10px;
+    padding: 10px;
+    border-color: white;
+    border-style: solid;
 }
 .albumes li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: robotolight;
+
 }
 .albumes li a:hover{
-    color: violet;
+    color: black;
 }
 
 .artistas{
-    background-color: violet;
     width: 330px;
     height: 233px;
     margin: 10px;
+    padding: 10px;
+    border-color: white;
+    border-style: solid;
 }
 .artistas li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: robotolight;
 }
 .artistas li a:hover{
-    color: violet;
+    color: black;
+}
+
+.top6{
+    color: white;
+    font-family: robotoitalic;
+    font-size: 23px;
+    padding: 10px;
 }
 
 
 /*Footer*/
 .footer{
-    background-color: black;
+    background-color: white;
     display: flex; /*Sin display flex, flexbox no funciona*/
     flex-direction: row;
     justify-content: space-between;
     height: 80px; 
+    width: 100%;
 
 }
 .nombres{
@@ -118,10 +154,28 @@ body{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 800px;
+    margin-left: 8px;
+    margin-right: 8px;
+    
 }
 .nombres h5{
-    color: whitesmoke;
+    color: #68698c;
+    font-family: robotolight;
+    font-size: 16px;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: robotolight;
+    src: url(../roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
 }
 
 @media(min-width: 768px){
