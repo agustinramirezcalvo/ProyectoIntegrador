@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+.header{
+    background-color: black;
+}
+
+.buscador{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+input{   
+    border-radius: 3px; /*Cambia el borde del buscador (mas cuadrado o mas circular)*/
+    padding: 5px;
+    width: 200px;
+}
+
+.menu{
+    background-color: black;
+    /*display: flex; /*Sin display flex, flexbox no funciona*/
+    /*flex-direction: row;*/
+    height: 80px; /*Todos estos le dicen al header que sea mas grande*/
+}
+.opciones{
+    margin: auto;
+    text-align: center;
+    /*Flexbox*/
+    display: flex; /*Para poner todo al lado*/
+    width: 79%; /*Cuanto quiero que se me separen las palabras*/ 
+    justify-content: space-around; /*Para que no quede pegado*/
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+    /*Le saco los puntos a la lista. Se lo digo al ul porque es el que crea la lista*/
+}
+.opciones li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.opciones li a:hover{
+    color: violet; /*Despues darle el color del logo*/
+}
+
+/*Body*/
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+.topcharts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center; /*Con margin y align-items se alineo la caja en el centro*/
+    text-align: center;
+}
+.canciones{
+    background-color: violet;
+    width: 330px;
+    height: 233px;
+    margin: 10px;
+}
+.canciones li a{
+    text-decoration: none;
+    color: black;
+}
+.canciones li a:hover{
+    color: violet;
+}
+
+.albumes{
+    background-color: violet;
+    width: 330px;
+    height: 233px;
+    margin: 10px;
+}
+.albumes li a{
+    text-decoration: none;
+    color: black;
+}
+.albumes li a:hover{
+    color: violet;
+}
+
+.artistas{
+    background-color: violet;
+    width: 330px;
+    height: 233px;
+    margin: 10px;
+}
+.artistas li a{
+    text-decoration: none;
+    color: black;
+}
+.artistas li a:hover{
+    color: violet;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: black;
+    display: flex; /*Sin display flex, flexbox no funciona*/
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px; 
+
+}
+.nombres{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.nombres h5{
+    color: whitesmoke;
+}
+
+@media(min-width: 768px){
+    
+
+}
