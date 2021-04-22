@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    
+}
+.imagenfondo{
+    background-image: url(../img/GOGI_Mesa\ de\ trabajo\ 1.png);
+    background-repeat:no-repeat;
+}
+
+.header{
+    background-color: black;
+    background-size: 10%;
+}
+.opciones{
+    width: 50%;
+    margin: auto;
+    /*Le dije que opciones se vaya a la mitad (todo lo escrito en el header)*/
+    text-align: center;
+    /*centre lo que estaba escrito (li a)*/  
+}
+.opciones li{
+    list-style-type: none;
+    /*Le saque los puntos*/
+}
+.opciones li a{
+    text-decoration: none;
+    /*Le saque el subrayado*/
+    color: white;
+    /*le di color a lo escrito. El comando se lo tengo que dar al padre para que me responda inmediatamente*/
+}
+.opciones li a:hover{
+    /*Modificar el a. Darle personalizado*/
+    text-decoration: underline;
+}
+
+.nombres{
+    background-color: black;
+    margin: auto;
+    text-align: center;
+}
+.nombres h5{
+    color: white;
+}
+
+/*Flexbox*/
+.header{
+    display: flex;
+    /*Para que todo flexbox funcione*/
+}
+
+/*Por ahora tengo todo perfecto para un celular*/
+
+/*Ahora quiero colocar media queries para hacer la pagina para una tablet (768px)*/
+@media(min-width: 768px){
+     .header{
+         display: flex;
+     }
+     .opciones{
+         display: flex;
+         /*Para que se pongan uno al lado del otro hago display flex*/
+         justify-content: space-around;
+         /*Para que se separen*/
+     }
+}
