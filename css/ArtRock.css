@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    color: #B39DDB ;
+    padding: 20px;
+}
+.contexto{
+    font-size: 20px;
+    text-align: center;
+    color: #B39DDB ;
+    padding: 15px;
+}
+.bandas{
+    text-align: center;
+    color: #B39DDB ;
+    padding: 15px;
+}
+.pink{
+    text-align: center;
+    color: #B39DDB ;
+    padding: 15px;
+}
+.beatles{
+    text-align: center;
+    color: #B39DDB ;
+    padding: 15px;
+}
+.img1{
+ text-align: center;
+}
+.img2{
+    text-align: center;
+}
+.rolling{
+    text-align: center;
+    color: #B39DDB ;
+    padding: 15px;
+}
+.img3{
+    text-align: center;
+}

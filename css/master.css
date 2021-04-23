@@ -120,4 +120,7 @@ ul{
     .opciones li a{
         font-size: 18px;
     }
+    .nombres{
+        width: 2000px;
+    }
 }

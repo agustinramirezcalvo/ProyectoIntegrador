@@ -75,9 +75,6 @@ ul{
     padding: 10px;
     border-color: white;
     border-style: solid;
-    
-    
-    
 }
 .canciones li{
     display: flex;
@@ -104,6 +101,13 @@ ul{
     border-color: white;
     border-style: solid;
 }
+.albumes li{
+    display: flex;
+    flex-direction: column; /*Pongo la lista como columna*/
+    justify-content: center; /*Quedo en el centro de la caja*/
+    align-items: center;
+    height: 25px;
+}
 .albumes li a{
     text-decoration: none;
     color: white;
@@ -121,6 +125,13 @@ ul{
     padding: 10px;
     border-color: white;
     border-style: solid;
+}
+.artistas li{
+    display: flex;
+    flex-direction: column; /*Pongo la lista como columna*/
+    justify-content: center; /*Quedo en el centro de la caja*/
+    align-items: center;
+    height: 25px;
 }
 .artistas li a{
     text-decoration: none;
@@ -154,16 +165,18 @@ ul{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    width: 325px;
     margin-left: 8px;
     margin-right: 8px;
+    padding-top: 10px;
     
 }
 .nombres h5{
     color: #68698c;
-    font-family: robotolight;
-    font-size: 16px;
+    font-family: roboto;
+    font-size: 14px;
 }
+
 
 @font-face{
     font-family: roboto;
@@ -179,6 +192,32 @@ ul{
 }
 
 @media(min-width: 768px){
-    
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+    }
+    .imagenfondo{
+        background-image: url(../img/fondoipad.png);
+        height: 1024px;
+    }
+}
 
+@media(min-width: 1024px){
+    .producto{
+        width: 100%;
+    }
+    .imagenfondo{
+        background-image: url(../img/logoparapc.png);
+        height: 950px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu{
+        height: 100px;
+    }
+    .opciones li a{
+        font-size: 18px;
+    }
+    .nombres{
+        width: 1100px;
+    }
 }

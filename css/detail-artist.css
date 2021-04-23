@@ -1,0 +1,183 @@
+.header{
+    background-color: white
+}
+
+.buscador{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+input{   
+    border-radius: 3px; /*Cambia el borde del buscador (mas cuadrado o mas circular)*/
+    padding: 5px;
+    width: 200px;
+}
+
+
+.menu{
+    /*display: flex; /*Sin display flex, flexbox no funciona*/
+    /*flex-direction: row;*/
+    height: 100px; /*Todos estos le dicen al header que sea mas grande*/
+}
+.opciones{
+    margin: auto;
+    text-align: center; 
+    padding: 5px;
+    width: 325px; /*Le doy ancho mi caja*/
+    height: 100px; /*Largo a mi caja*/
+    /*Flexbox*/
+    display: flex; /*Para poner todo al lado*/
+    justify-content: space-around; /*Para que no quede pegado*/
+    flex-wrap: wrap; /*Para que la caja quede ordenada y cuando se termine el ancho bajen las palabras*/
+    align-items: center; /*alinea las palabras todas en el centro*/
+}
+ul{
+    list-style-type: none;
+    /*Le saco los puntos a la lista. Se lo digo al ul porque es el que crea la lista*/
+}
+.opciones li a{
+    text-decoration: none;
+    color: #68698c;
+    font-family: roboto;
+    font-size: 16px;
+}
+.opciones li a:hover{
+    color: black; /*Despues darle el color del logo*/
+}
+.canciones img{
+    width: 70%;
+    margin-top: 200px;
+}
+body{
+    background-color: #68698c;
+    margin: 0%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+h3{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.encabezado{
+    background-color: rgb(133, 118, 163);
+    
+}
+.Canciones li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+    text-decoration: none;
+}
+.Canciones li a:hover{
+    text-decoration: underline;
+    color: yellow;
+    list-style-type: none;
+}
+.Canciones{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    color: white;
+}
+
+    .logo{
+        width: 10%;
+        margin: 0;
+    }
+    
+    .encabezado{
+        display: flex;
+    }
+
+
+ .canciones{
+     display: flex;
+     flex-wrap: wrap;
+     list-style-type: none;
+ }
+
+ .canciones li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+    text-decoration: none;
+}
+.canciones li a:hover{
+    text-decoration: underline;
+    color: yellow;
+    list-style-type: none;
+}
+.Canciones{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .informacion{
+     width: 50%;
+ }
+ .footer{
+    background-color: white;
+    display: flex; /*Sin display flex, flexbox no funciona*/
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px; 
+
+}
+.nombres{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin-left: 8px;
+    margin-right: 8px;
+    
+}
+.nombres h5{
+    color: #68698c;
+    font-family: robotolight;
+    font-size: 16px;
+}
+ 
+@media(min-width: 1024px){
+    .informacion{
+        width: 50%;
+    }
+    .menu{
+        height: 100px;
+    }
+    .opciones li a{
+        font-size: 18px;
+    }
+    .nombres{
+        width: 1100px;
+    }
+}
+@media(min-width: 768px){
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+    }
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: robotolight;
+    src: url(../roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
+}
