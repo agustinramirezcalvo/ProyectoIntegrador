@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: white
+}
+
+.buscador{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+input{   
+    border-radius: 3px; /*Cambia el borde del buscador (mas cuadrado o mas circular)*/
+    padding: 5px;
+    width: 200px;
+}
+
+
+.menu{
+    /*display: flex; /*Sin display flex, flexbox no funciona*/
+    /*flex-direction: row;*/
+    height: 100px; /*Todos estos le dicen al header que sea mas grande*/
+}
+.opciones{
+    margin: auto;
+    text-align: center; 
+    padding: 5px;
+    width: 325px; /*Le doy ancho mi caja*/
+    height: 100px; /*Largo a mi caja*/
+    /*Flexbox*/
+    display: flex; /*Para poner todo al lado*/
+    justify-content: space-around; /*Para que no quede pegado*/
+    flex-wrap: wrap; /*Para que la caja quede ordenada y cuando se termine el ancho bajen las palabras*/
+    align-items: center; /*alinea las palabras todas en el centro*/
+}
+ul{
+    list-style-type: none;
+    /*Le saco los puntos a la lista. Se lo digo al ul porque es el que crea la lista*/
+}
+.opciones li a{
+    text-decoration: none;
+    color: #68698c;
+    font-family: roboto;
+    font-size: 16px;
+}
+.opciones li a:hover{
+    color: black; /*Despues darle el color del logo*/
+}
+
+body{
+    background-color: #68698c;
+}
+
+
+
+
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+
+@media(min-width: 768px){
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+    }
+    .imagenfondo{
+        background-image: url(../img/fondoipad.png);
+        height: 1024px;
+    }
+}
+
+@media(min-width: 1024px){
+    .producto{
+        width: 100%;
+    }
+    .imagenfondo{
+        background-image: url(../img/logoparapc.png);
+        height: 950px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu{
+        height: 100px;
+    }
+    .opciones li a{
+        font-size: 18px;
+    }
+    .nombres{
+        width: 2000px;
+    }
+}

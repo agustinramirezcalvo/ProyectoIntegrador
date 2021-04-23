@@ -168,3 +168,12 @@ h2{
     font-family: robotoitalic;
     src: url(../roboto/Roboto-BoldItalic.ttf);
 }
+@media(min-width: 768px){
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+    }
+    .imagenfondo{
+        background-image: url(../img/fondoipad.png);
+        height: 1024px;
+    }
+}
