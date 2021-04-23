@@ -59,9 +59,11 @@ h1{
     text-align: center;
     color: white;
     font-size: 70px;
+    font-family: roboto;
 }
 h3{
     color: white;
+    font-family: robotolight;
 }
 a{
     text-decoration: none;
@@ -73,7 +75,7 @@ ul{
 
 .Canciones li a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: robotolight;
     font-size: 20px;  
     text-decoration: none;
 }

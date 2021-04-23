@@ -14,12 +14,14 @@ body{
     text-align: center;
     color: white ;
     padding: 20px;
+    font-family: roboto;
 }
 .Lista{
     font-size: 25px;
     text-align: center ;
     color: white;
     padding: 20px;
+    font-family: robotolight;
 }
 
 .header{

@@ -5,6 +5,7 @@
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 body{
     background-color: black;
@@ -14,15 +15,30 @@ body{
     text-align: center;
     color: #B39DDB ;
     padding: 20px;
+    font-family: roboto;
 }
 .contexto{
     font-size: 20px;
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .bandas{
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
+}
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: robotolight;
+    src: url(../roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
 }

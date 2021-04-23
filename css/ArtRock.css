@@ -6,27 +6,32 @@ body{
     text-align: center;
     color: #B39DDB ;
     padding: 20px;
+    font-family: roboto;
 }
 .contexto{
     font-size: 20px;
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .bandas{
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .pink{
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .beatles{
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .img1{
  text-align: center;
@@ -38,7 +43,20 @@ body{
     text-align: center;
     color: #B39DDB ;
     padding: 15px;
+    font-family: robotolight;
 }
 .img3{
     text-align: center;
+}
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: robotolight;
+    src: url(../roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
 }

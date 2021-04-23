@@ -57,6 +57,7 @@ h1{
     text-align: center;
     color: white;
     font-size: 70px;
+    font-family: roboto;
 }
 a{
     text-decoration: none;
@@ -65,13 +66,9 @@ ul{
     list-style-type: none;
 }
 
-.encabezado{
-    background-color: rgb(133, 118, 163);
-    
-}
 .Canciones li a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: robotolight;
     font-size: 20px;  
     text-decoration: none;
 }
@@ -87,17 +84,6 @@ ul{
 h2{
     color: white;
 }
-
-    .logo{
-        width: 10%;
-        margin: 0;
-    }
-    
-    .encabezado{
-        display: flex;
-    }
-
-
  .canciones{
      display: flex;
      flex-wrap: wrap;
@@ -106,7 +92,7 @@ h2{
 
  .canciones li a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: robotolight;
     font-size: 20px;  
     text-decoration: none;
 }
