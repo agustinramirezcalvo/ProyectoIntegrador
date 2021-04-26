@@ -58,6 +58,7 @@ input{
     align-items: center;
     flex-wrap: wrap;
 }
+
 ul{
     list-style-type: none;
     /*Le saco los puntos a la lista. Se lo digo al ul porque es el que crea la lista*/

@@ -1,35 +1,36 @@
 body{
-    background-color: black;
+    background-color:#68698c;
+    margin: 0%;
 }
 .titulo{
     font-size: 40px;
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 20px;
     font-family: roboto;
 }
 .contexto{
     font-size: 20px;
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 15px;
     font-family: robotolight;
 }
 .bandas{
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 15px;
     font-family: robotolight;
 }
 .AC{
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 15px;
     font-family: robotolight;
 }
 .beatles{
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 15px;
     font-family: robotolight;
 }
@@ -41,7 +42,7 @@ body{
 }
 .rolling{
     text-align: center;
-    color: #B39DDB ;
+    color: white;
     padding: 15px;
     font-family: robotolight;
 }
