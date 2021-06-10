@@ -12,7 +12,6 @@ img{
 }
 
 .buscador{
-    margin: auto;
     text-align: center;
     padding-top: 10px;
 }
@@ -23,14 +22,8 @@ input{
 }
 
 
-.menu{
-    /*display: flex; /*Sin display flex, flexbox no funciona*/
-    /*flex-direction: row;*/
-    height: 100px; /*Todos estos le dicen al header que sea mas grande*/
-}
 .opciones{
     margin: auto;
-    text-align: center; 
     padding: 5px;
     width: 325px; /*Le doy ancho mi caja*/
     height: 100px; /*Largo a mi caja*/
@@ -68,8 +61,8 @@ ul{
 .footer{
     background-color: white;
     display: flex; /*Sin display flex, flexbox no funciona*/
+    flex-wrap: wrap; 
     flex-direction: row;
-    justify-content: space-between;
     height: 80px; 
 
 }
@@ -78,7 +71,6 @@ ul{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 800px;
     margin-left: 8px;
     margin-right: 8px;
     
@@ -105,17 +97,11 @@ ul{
 }
 
 @media(min-width: 1024px){
-    .producto{
-        width: 100%;
-    }
     .imagenfondo{
         background-image: url(../img/logoparapc.png);
         height: 950px;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .menu{
-        height: 100px;
     }
     .opciones li a{
         font-size: 18px;

@@ -56,7 +56,6 @@ body{
 
 
 
-
 @font-face{
     font-family: roboto;
     src: url(../roboto/Roboto-Bold.ttf);
@@ -66,22 +65,9 @@ body{
     .opciones{
         width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
     }
-    .imagenfondo{
-        background-image: url(../img/fondoipad.png);
-        height: 1024px;
-    }
 }
 
 @media(min-width: 1024px){
-    .producto{
-        width: 100%;
-    }
-    .imagenfondo{
-        background-image: url(../img/logoparapc.png);
-        height: 950px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .menu{
         height: 100px;
     }
