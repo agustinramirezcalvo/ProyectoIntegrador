@@ -125,7 +125,6 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     height: 80px; 
-    width: 100%;
 
 }
 .nombres{
@@ -133,16 +132,15 @@ h2{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 325px;
+    width: 800px;
     margin-left: 8px;
     margin-right: 8px;
-    padding-top: 10px;
     
 }
 .nombres h5{
     color: #68698c;
-    font-family: roboto;
-    font-size: 14px;
+    font-family: robotolight;
+    font-size: 16px;
 }
  
 @media(min-width: 1024px){
@@ -176,13 +174,8 @@ h2{
     .opciones{
         width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
     }
-}
-
-@media(min-width: 1024px){
-    .opciones li a{
-        font-size: 18px;
-    }
-    .nombres{
-        width: 2000px;
+    .imagenfondo{
+        background-image: url(../img/fondoipad.png);
+        height: 1024px;
     }
 }
