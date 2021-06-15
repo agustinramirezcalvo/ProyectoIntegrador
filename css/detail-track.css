@@ -114,7 +114,6 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     height: 80px; 
-    width: 100%;
 
 }
 .nombres{
@@ -122,35 +121,17 @@ h2{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 325px;
+    width: 800px;
     margin-left: 8px;
     margin-right: 8px;
-    padding-top: 10px;
     
 }
 .nombres h5{
     color: #68698c;
-    font-family: roboto;
-    font-size: 14px;
-}
- @font-face{
-    font-family: roboto;
-    src: url(../roboto/Roboto-Bold.ttf);
-}
-@font-face{
     font-family: robotolight;
-    src: url(../roboto/Roboto-Light.ttf);
+    font-size: 16px;
 }
-@font-face {
-    font-family: robotoitalic;
-    src: url(../roboto/Roboto-BoldItalic.ttf);
-}
-
-@media(min-width: 768px){
-    .opciones{
-        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
-    }
-}
+ 
 @media(min-width: 1024px){
     .informacion{
         width: 50%;
@@ -162,8 +143,24 @@ h2{
         font-size: 18px;
     }
     .nombres{
-        width: 2000px;
+        width: 1100px;
+    }
+}
+@media(min-width: 768px){
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
     }
 }
 
-
+@font-face{
+    font-family: roboto;
+    src: url(../roboto/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: robotolight;
+    src: url(../roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
+}
