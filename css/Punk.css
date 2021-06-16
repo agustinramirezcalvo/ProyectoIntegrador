@@ -1,6 +1,14 @@
 .img4{
     text-align: center;
 }
+h3{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+h3 :hover{
+    color: black;
+}
 .nirvana{
     text-align: center;
     color: white;

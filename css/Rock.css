@@ -2,6 +2,14 @@ body{
     background-color:#68698c;
     margin: 0%;
 }
+h3{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+h3 :hover{
+    color: black;
+}
 .titulo{
     font-size: 40px;
     text-align: center;

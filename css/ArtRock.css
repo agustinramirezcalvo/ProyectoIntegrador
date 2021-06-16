@@ -9,6 +9,14 @@ body{
     padding: 20px;
     font-family: roboto;
 }
+h3{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+h3 :hover{
+    color: black;
+}
 .contexto{
     font-size: 20px;
     text-align: center;
