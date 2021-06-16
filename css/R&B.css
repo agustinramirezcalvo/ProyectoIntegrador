@@ -1,6 +1,15 @@
 .img4{
     text-align: center;
 }
+h3{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-family: robotolight;
+}
+h3 :hover{
+    color: black;
+}
 .michael{
     text-align: center;
     color: white;
