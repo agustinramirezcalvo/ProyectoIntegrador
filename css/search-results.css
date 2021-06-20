@@ -61,6 +61,10 @@ body{
     font-family: roboto;
     src: url(../roboto/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: robotoitalic;
+    src: url(../roboto/Roboto-BoldItalic.ttf);
+}
 
 @media(min-width: 768px){
     .opciones{
@@ -91,4 +95,25 @@ body{
     .nombres{
         width: 2000px;
     }
+}
+
+/*Buscador*/
+.tituloBusqueda{
+    font-size: 40px;
+    font-family: robotoitalic;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.contenido2{
+    font-size: 30px;
+    font-family: roboto; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}   
+.titulosCanciones{
+    
 }

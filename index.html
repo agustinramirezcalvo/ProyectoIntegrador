@@ -13,15 +13,25 @@
     <main class="main">
         <header class="header"> 
             <section class="buscador">
-                <form action="search-results.html" method="GET">
+                <!--<form action="search-results.html" method="GET">
+                    <div>
+                        <input type="text" name="nombre" id="buscar" placeholder="Buscar" required> <button type="submit">
+                            <h2><ion-icon name="search-sharp"></ion-icon></h2>
+                        </button>
+                    </div>
                     <div>
                         <label for="buscar"></label>
                     </div>
-                    <div>
-                        <input type="text" name="nombre" id="buscar" placeholder="Buscar" required>
-                    </div>
+                </form>-->
+
+                <form action="search-results.html" method="GET">
+                    <input type="search" name="buscar" placeholder="Buscar...">
+                    <button type="submit">
+                        <h2><ion-icon name="search-outline"></ion-icon></h2>
+                    </button>
                 </form>
-            </section>  
+            </section> 
+            
             <nav class="menu">
                 <ul class="opciones">
                     <li><a href="master.html">Inicio</a></li>
@@ -35,6 +45,10 @@
                 </ul>
             </nav>  
         </header>
+        
+        <section class="top10canciones">
+            
+        </section> 
 
         <section class="topcharts">
             <article class="canciones">
