@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador - Detalles</title>
     <link rel="stylesheet" href="css/playlist.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <main class="container">
         <header class="header"> 
             <section class="buscador">
-                <form action="search-results.html" method="GET">
+                <!--<form action="search-results.html" method="GET">
                     <div>
                         <label for="buscar"></label>
                     </div>
                     <div>
                         <input type="text" name="nombre" id="buscar" placeholder="Buscar" required>
                     </div>
+                </form>-->
+                <form action="search-results.html" method="GET">
+                    <input type="search" name="buscar" placeholder="Buscar...">
+                    <button type="submit">
+                        <h2><ion-icon name="search-outline"></ion-icon></h2>
+                    </button>
                 </form>
             </section>  
             <nav class="menu">
