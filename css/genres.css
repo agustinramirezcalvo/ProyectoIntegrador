@@ -4,7 +4,8 @@
     padding: 0;
 }
 img{
-    width: 100%;
+    width: 50%;
+    height: 320px;
 }
 body{
     background-color: #68698c;
