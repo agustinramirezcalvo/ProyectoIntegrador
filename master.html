@@ -16,21 +16,27 @@
             <section class="buscador">
                 <!--<form action="search-results.html" method="GET">
                     <div>
-                        <label for="buscar"></label>
+                        <input type="text" name="nombre" id="buscar" placeholder="Buscar" required> <button type="submit">
+                            <h2><ion-icon name="search-sharp"></ion-icon></h2>
+                        </button>
                     </div>
                     <div>
-                        <input type="text" name="nombre" id="buscar" placeholder="Buscar" required>
+                        <label for="buscar"></label>
                     </div>
                 </form>-->
-                 <form action="search-results.html" method="GET">
+
+                <form action="search-results.html" method="GET">
                     <input type="search" name="buscar" placeholder="Buscar...">
                     <button type="submit">
                         <h2><ion-icon name="search-outline"></ion-icon></h2>
                     </button>
                 </form>
-            </section>  
+                
+            </section> 
+            
+            
             <nav class="menu">
-                <ul class="opciones">
+                <ul class="opciones"><img class="imagen" src="img/logo.jpg" alt="Logo">
                     <li><a href="master.html">Inicio</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="detail-track.html">Canciones</a></li>
@@ -40,7 +46,7 @@
                     <li><a href="genres.html">Géneros</a></li>
                     <li><a href="search-results.html">Resultados</a></li>
                 </ul>
-            </nav>
+            </nav>  
         </header>
 
         <section class="imagenfondo">
@@ -51,7 +57,6 @@
         <footer class="footer">
             <section class="nombres">
                 <h5>Vicente Oscamou Mallea</h5>
-                <h5>Joaquín Gomes</h5>
                 <h5>Agustín Ramírez Calvo</h5>
             </section>      
         </footer>

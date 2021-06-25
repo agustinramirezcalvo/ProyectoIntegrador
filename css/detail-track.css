@@ -1,5 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header*/
+.imagen{
+    width: 70px;
+    height: 70px;
+}
 .header{
-    background-color: white
+    background-color: white;
+    width: 100%;
 }
 
 .buscador{
@@ -13,23 +26,23 @@ input{
     width: 200px;
 }
 
-
 .menu{
     /*display: flex; /*Sin display flex, flexbox no funciona*/
     /*flex-direction: row;*/
     height: 100px; /*Todos estos le dicen al header que sea mas grande*/
+    width: 1290px;
 }
 .opciones{
     margin: auto;
-    text-align: center; 
+    text-align: center;
     padding: 5px;
     width: 325px; /*Le doy ancho mi caja*/
-    height: 100px; /*Largo a mi caja*/
+    height: 100px;
     /*Flexbox*/
-    display: flex; /*Para poner todo al lado*/
+    display: flex; /*Para poner todo al lado*/ 
     justify-content: space-around; /*Para que no quede pegado*/
-    flex-wrap: wrap; /*Para que la caja quede ordenada y cuando se termine el ancho bajen las palabras*/
-    align-items: center; /*alinea las palabras todas en el centro*/
+    align-items: center;
+    flex-wrap: wrap;
 }
 ul{
     list-style-type: none;
@@ -44,10 +57,13 @@ ul{
 .opciones li a:hover{
     color: black; /*Despues darle el color del logo*/
 }
-.canciones img{
-    width: 70%;
-    margin-top: 200px;
-}
+
+
+
+
+
+
+
 body{
     background-color: #68698c;
     margin: 0%;
@@ -56,58 +72,69 @@ body{
 h1{
     text-align: center;
     color: white;
-    font-size: 70px;
+    font-size: 30px;
     font-family: roboto;
+    margin: 30px;
 }
-a{
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-}
-
-.Canciones li a {
-    color: white;
-    font-family: robotolight;
-    font-size: 20px;  
-    text-decoration: none;
-}
-.Canciones li a:hover{
-    text-decoration: underline;
-    color: yellow;
-    list-style-type: none;
-}
-.Canciones{
+.info{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    text-align: center;
+    width: 700px;
 }
 h2{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: robotolight;
+    margin-top: 10px;
+}
+h2 a{
+    text-decoration: none;
     color: white;
 }
- .canciones{
-     display: flex;
-     flex-wrap: wrap;
-     list-style-type: none;
- }
-
- .canciones li a {
-    color: white;
+h2 a:hover{
+    color: black;
+}
+p{
+    text-align: center;
+    font-size: 20px;
     font-family: robotolight;
-    font-size: 20px;  
+    margin: 10px;
+}
+p a{
+    color: white;
     text-decoration: none;
 }
-.canciones li a:hover{
-    text-decoration: underline;
-    color: yellow;
-    list-style-type: none;
+p a:hover{
+    color: black;
 }
-.Canciones{
-    display: flex;
-    flex-wrap: wrap;
+.play{
+    width: 1300px;
 }
- .informacion{
-     width: 50%;
- }
+.playlist2{
+    text-align: center;
+    font-size: 18px;
+    font-family: robotolight;
+    margin: 10px;
+}
+.playlist2 a{
+    color: white;
+    text-decoration: none;
+}
+.playlist2 a:hover{
+    color: black;
+}
+
+
+
+
+
+
+ 
  .footer{
     background-color: white;
     display: flex; /*Sin display flex, flexbox no funciona*/
@@ -128,28 +155,8 @@ h2{
 }
 .nombres h5{
     color: #68698c;
-    font-family: robotolight;
+    font-family: roboto;
     font-size: 16px;
-}
- 
-@media(min-width: 1024px){
-    .informacion{
-        width: 50%;
-    }
-    .menu{
-        height: 100px;
-    }
-    .opciones li a{
-        font-size: 18px;
-    }
-    .nombres{
-        width: 1100px;
-    }
-}
-@media(min-width: 768px){
-    .opciones{
-        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
-    }
 }
 
 @font-face{
@@ -163,4 +170,37 @@ h2{
 @font-face {
     font-family: robotoitalic;
     src: url(../roboto/Roboto-BoldItalic.ttf);
+}
+
+@media(min-width: 768px){
+    .opciones{
+        width: 95%; /*Cuanto quiero que se me separen las palabras*/ 
+    }
+}
+
+@media(min-width: 1024px){
+    .informacion{
+        width: 100%;
+    }
+    .producto{
+        width: 100%;
+    }
+    .imagenfondo{
+        background-image: url(../img/logoparapc.png);
+        height: 950px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu{
+        height: 100px;
+    }
+    .opciones li a{
+        font-size: 18px;
+    }
+    .nombres{
+        width: 1500px;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
+    }
 }

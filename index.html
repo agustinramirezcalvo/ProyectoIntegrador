@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kordz Home</title>
+    <title>Kordz - Home</title>
     <link rel="stylesheet" href="css/home.css">
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -30,10 +30,12 @@
                         <h2><ion-icon name="search-outline"></ion-icon></h2>
                     </button>
                 </form>
+                
             </section> 
             
+            
             <nav class="menu">
-                <ul class="opciones">
+                <ul class="opciones"><img class="imagen" src="img/logo.jpg" alt="Logo">
                     <li><a href="master.html">Inicio</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="detail-track.html">Canciones</a></li>
@@ -46,54 +48,33 @@
             </nav>  
         </header>
         
-        <section class="top10canciones">
+        <section class="lista">
+         
+            <article class="caja">
+                <nav class="cajaTitulo"> <h2 class="titulo">Canciones de la semana</h2> </nav>
+                <nav class="tracks"></nav>
+            </article>
+    
+            <article class="caja">
+                <nav class="cajaTtitulo"> <h2 class="titulo">Albumes de la semana</h2> </nav>
+                <nav class="albums"></nav>
+            </article>
+    
+            <article class="caja">
+                <nav class="cajaTitulo"> <h2 class="titulo">Artistas de la semana</h2> </nav>
+                <nav class="artists"></nav>
+            </article>
             
-        </section> 
-
-        <section class="topcharts">
-            <article class="canciones">
-                <h2 class="top6">Top 6: canciones del año</h2>
-                <ul>
-                    <li><a href="detail-track.html">Black in Black</a> </li>
-                    <li><a href="detail-track.html">Beat it</a> </li>
-                    <li><a href="detail-track.html">Breathe</a> </li>
-                    <li><a href="detail-track.html">In Bloom</a> </li>
-                    <li><a href="detail-track.html">Start Me Up</a> </li>
-                    <li><a href="detail-track.html">Come Together</a> </li>
-                </ul>
-            </article>
-            <article class="albumes">
-                <h2 class="top6">Top 6: albumes del año</h2>
-                <ul>
-                    <li><a href="detail-album.html">Black in Black</a></li>
-                    <li><a href="detail-album.html">Thriller</a></li>
-                    <li><a href="detail-album.html">The Dark Side of the Moon</a></li>
-                    <li><a href="detail-album.html">Neverming</a></li>
-                    <li><a href="detail-album.html">Tatoo you</a></li>
-                    <li><a href="detail-album.html">Abbey Road</a></li>
-                </ul>
-            </article>
-            <article class="artistas">
-                <h2 class="top6">Top 6: artistas del año</h2>
-                <ul>
-                    <li><a href="detail-artist.html">AC/DC</a></li>
-                    <li><a href="detail-artist.html">Michael Jackson</a></li>
-                    <li><a href="detail-artist.html">Pink Floyd</a></li>
-                    <li><a href="detail-artist.html">Nirvana</a></li>
-                    <li><a href="detail-artist.html">The Rolling Stones</a></li>
-                    <li><a href="detail-artist.html">The Beatles</a></li>
-                </ul>
-            </article>
         </section>
+
 
         <footer class="footer">
             <section class="nombres">
                 <h5>Vicente Oscamou Mallea</h5>
-                <h5>Joaquín Gomes</h5>
                 <h5>Agustín Ramírez Calvo</h5>
-            </section>      
-        </footer>
+            </section> 
+            </footer>
     </main>
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script><!--Vinclulación de manera interna-->
 </body>
 </html>

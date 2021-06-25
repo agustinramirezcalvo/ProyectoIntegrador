@@ -4,7 +4,12 @@
     padding: 0;
 }
 
+
 /*Header*/
+.imagen{
+    width: 70px;
+    height: 70px;
+}
 .header{
     background-color: white;
     width: 100%;
@@ -25,7 +30,7 @@ input{
     /*display: flex; /*Sin display flex, flexbox no funciona*/
     /*flex-direction: row;*/
     height: 100px; /*Todos estos le dicen al header que sea mas grande*/
-    width: 100%;
+    width: 1290px;
 }
 .opciones{
     margin: auto;
@@ -61,100 +66,98 @@ ul{
     list-style-type: none;
 }
 
-.topcharts{
+
+/*Body*/
+
+img{
+    width: 70%;
+}
+
+.titulo{
+    padding: 20px;
+    font-size: 30px;
+    font-family: roboto;
+    text-align: center; 
+    color: white;   
+}
+.caja{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 1200px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    align-items: center; /*Con margin y align-items se alineo la caja en el centro*/
-    text-align: center;
+    margin-left: 6%;
 }
-.canciones{
-    width: 330px;
-    height: 233px;
-    margin: 10px;
+.tracks{
     padding: 10px;
-    border-color: rgb(153, 140, 140);
-    border-style: solid;
-}
-.canciones li{
     display: flex;
-    flex-direction: column; /*Pongo la lista como columna*/
-    justify-content: center; /*Quedo en el centro de la caja*/
-    align-items: center;
-    height: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
 }
-.canciones li a{
-    text-decoration: none;
-    color: white;
-    font-family: robotolight;
+.todosCancion{
+    margin: 15px;
+}
+
+
+.albums{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.todosAlbum{
+    margin: 15px;
+}
+
+.artists{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.todosArtista{
+    margin: 15px;
+}
+
+/*Para todas las cajas*/
+h3{
+    margin-bottom: 10px;
     
 }
-.canciones li a:hover{
-    color: black;
-}
-
-.albumes{
-    width: 330px;
-    height: 233px;
-    margin: 10px;
-    padding: 10px;
-    border-color: white;
-    border-style: solid;
-}
-.albumes li{
-    display: flex;
-    flex-direction: column; /*Pongo la lista como columna*/
-    justify-content: center; /*Quedo en el centro de la caja*/
-    align-items: center;
-    height: 25px;
-}
-.albumes li a{
+h3 a{
+    color: white;
+    font-family: roboto;
+    font-size: 20px;
     text-decoration: none;
-    color: white;
-    font-family: robotolight;
-
+    margin-bottom: 20px;
 }
-.albumes li a:hover{
+h3 a:hover{
     color: black;
 }
-
-.artistas{
-    width: 330px;
-    height: 233px;
-    margin: 10px;
-    padding: 10px;
-    border-color: white;
-    border-style: solid;
+p{
+    font-family: robotolight;
+    color: white;
+    margin-top: 10px;
 }
-.artistas li{
-    display: flex;
-    flex-direction: column; /*Pongo la lista como columna*/
-    justify-content: center; /*Quedo en el centro de la caja*/
-    align-items: center;
-    height: 25px;
-}
-.artistas li a{
+p a{
+    color: white;
     text-decoration: none;
-    color: white;
-    font-family: robotolight;
 }
-.artistas li a:hover{
+p a:hover{
     color: black;
 }
 
-.top6{
-    color: white;
-    font-family: robotoitalic;
-    font-size: 23px;
-    padding: 10px;
-}
 
 
 /*Footer*/
 .footer{
     background-color: white;
     display: flex; /*Sin display flex, flexbox no funciona*/
-    flex-direction: row;
     justify-content: space-between;
     height: 80px; 
     width: 100%;
@@ -176,7 +179,6 @@ ul{
     font-family: roboto;
     font-size: 14px;
 }
-
 
 @font-face{
     font-family: roboto;
@@ -218,6 +220,9 @@ ul{
         font-size: 18px;
     }
     .nombres{
-        width: 1100px;
+        width: 1500px;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
     }
 }

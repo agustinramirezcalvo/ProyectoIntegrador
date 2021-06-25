@@ -3,8 +3,16 @@
     margin: 0;
     padding: 0;
 }
+
+
+/*Header*/
+.imagen{
+    width: 70px;
+    height: 70px;
+}
 .header{
-    background-color: white
+    background-color: white;
+    width: 100%;
 }
 
 .buscador{
@@ -18,23 +26,23 @@ input{
     width: 200px;
 }
 
-
 .menu{
     /*display: flex; /*Sin display flex, flexbox no funciona*/
     /*flex-direction: row;*/
     height: 100px; /*Todos estos le dicen al header que sea mas grande*/
+    width: 1290px;
 }
 .opciones{
     margin: auto;
-    text-align: center; 
+    text-align: center;
     padding: 5px;
     width: 325px; /*Le doy ancho mi caja*/
-    height: 100px; /*Largo a mi caja*/
+    height: 100px;
     /*Flexbox*/
-    display: flex; /*Para poner todo al lado*/
+    display: flex; /*Para poner todo al lado*/ 
     justify-content: space-around; /*Para que no quede pegado*/
-    flex-wrap: wrap; /*Para que la caja quede ordenada y cuando se termine el ancho bajen las palabras*/
-    align-items: center; /*alinea las palabras todas en el centro*/
+    align-items: center;
+    flex-wrap: wrap;
 }
 ul{
     list-style-type: none;
@@ -54,8 +62,77 @@ body{
     background-color: #68698c;
 }
 
+/*Buscador*/
+.tituloBusqueda{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: roboto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.resultadosBusqueda{
+    width: 600px;
+    height: 100%;
+    margin: 20px;
+    padding: 15px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 29%;
+    margin-bottom: 60px;
+}
+.info{
+    font-size: 30px;
+    font-family: roboto; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}   
+.titulosCanciones{
+    font-family: robotolight;
+    font-size: 23px;
+}
+.titulosCanciones a{
+    color: white;
+    text-decoration: none;
+}
+.titulosCanciones a:hover{
+    color: black;
+}
 
 
+
+/*Footer*/
+.footer{
+    background-color: white;
+    display: flex; /*Sin display flex, flexbox no funciona*/
+    justify-content: space-between;
+    height: 80px; 
+    width: 100%;
+
+}
+.nombres{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 325px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 10px;
+    
+}
+.nombres h5{
+    color: #68698c;
+    font-family: roboto;
+    font-size: 14px;
+}
 
 @font-face{
     font-family: roboto;
@@ -93,27 +170,11 @@ body{
         font-size: 18px;
     }
     .nombres{
-        width: 2000px;
+        width: 1500px;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
     }
 }
 
-/*Buscador*/
-.tituloBusqueda{
-    font-size: 40px;
-    font-family: robotoitalic;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-.contenido2{
-    font-size: 30px;
-    font-family: roboto; 
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}   
-.titulosCanciones{
-    
-}
+
