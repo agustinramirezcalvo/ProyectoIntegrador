@@ -26,16 +26,19 @@ function CargarListaGeneros()
   
 function CargarListaArtista(idGenero)
 {
- 
+    document.getElementById("ListaArtistas").innerHTML="";
+
+    listaArtistas=null;
     let url ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/'+idGenero+'/artists';
+    console.log(url)
     fetch(url)
     .then(response => response.json())
     .then(function(lista) 
-            {
+            {                   
+                listaArtistas=lista;
                 for(let i=0;i<lista.data.length;i++)
 
                 {
-                    listaArtistas=lista;
                     agregarElementoArtista(lista.data[i]);
 
 
@@ -59,7 +62,7 @@ function agregarElementoArtista(nuevoLi)
 {
 
             var li=document.createElement('li');
-               li.id=nuevoLi.id;
+            li.id=nuevoLi.id;
             li.innerHTML="<a id='"+nuevoLi.id+"'>"+nuevoLi.name+"</a><img  width='300' height='300' src='"+nuevoLi.picture_small+"'/>";
             debugger;
             document.getElementById("ListaArtistas").appendChild(li);
