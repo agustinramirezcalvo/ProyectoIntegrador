@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,17 +11,10 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <main class="Container">
+    <main id="Genero" class="Container">
         <header class="header"> 
             <section class="buscador">
-                <!--<form action="search-results.html" method="GET">
-                    <div>
-                        <label for="buscar"></label>
-                    </div>
-                    <div>
-                        <input type="text" name="nombre" id="buscar" placeholder="Buscar" required>
-                    </div>
-                </form>-->
+        
                 <form action="search-results.html" method="GET">
                     <input type="search" name="buscar" placeholder="Buscar...">
                     <button type="submit">
@@ -30,30 +24,41 @@
             </section>  
             <nav class="menu">
                 <ul class="opciones">
-                    <li><a href="master.html">Inicio</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="detail-track.html">Canciones</a></li>
-                    <li><a href="detail-album.html">Albumes</a></li>
-                    <li><a href="detail-artist.html">Artistas</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                    <li><a href="genres.html">Géneros</a></li>
-                    <li><a href="search-results.html">Resultados</a></li>
+                    
                 </ul>
             </nav>
         </header> 
         <h1 class="Box1">Generos</h1>
-    <ul class="Lista" style="text-decoration: none;">
-<li><a href="HardRock.html">Hard Rock</a></li>
-<li><a href="Rock.html">Rock</a></li>
-<li><a href="R&B.html">R&B</a></li>
-<li> <a href="ArtRock.html">Art Rock</a></li>
-<li><a href="RockClasico.html"> Rock Clasico</a></li>
-<li><a href="Punk.html">Punk</a></li>
-<li><a href="disco.html">Disco</a></li>
-    </ul>
-<script src="js/generes.js"></script>
+        <ul id="Lista"  >
+            <li><a href="HardRock.html">Hard Rock</a></li>
+            <li><a href="Rock.html">Rock</a></li>
+            <li><a href="R&B.html">R&B</a></li>
+            <li> <a href="ArtRock.html">Art Rock</a></li>
+            <li><a href="RockClasico.html"> Rock Clasico</a></li>
+            <li><a href="Punk.html">Punk</a></li>
+            <li><a href="disco.html">Disco</a></li>
+            </ul>
+             <script src="js/generes.js"></script>
 
     
 </main>
+
+<main id="DetalleGenero" style="display: none;" class="Container">
+ 
+     <h3><a onclick="Regresar()">Back</a></h3>
+    
+    
+    <h1 id="title" class="titulo"></h1>
+    <p id="position" class="titulo"></p>
+      <section class="listadoCantante">
+        <p id="cantante" class="titulo"></p>
+        <article class="img4" >
+          <img id="imagen" src="img/MJ.jpeg"  width="100" height="600" >
+        </article>
+    </section>
+    
+
+</main>
 </body>
 </html>
+ 
